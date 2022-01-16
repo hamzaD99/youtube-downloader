@@ -3,8 +3,6 @@ This script is useful for anyone needs to download multiple videos or playlist f
 
 # How to use it?
 You need to fill `Videos.csv` file as follows:
-	![image](https://user-images.githubusercontent.com/46914044/149663143-ad1c6020-99ee-4d26-b3b9-14b966c79372.png)
-	
 	**1- url column:** To provide the URL for the video or the playlist.
 	**2- playlist(0,1) column:** type 0 for video, 1 for playlist.
 	**3- video/audio column:** type 'video' if you want the URL as video, 'audio' for audio.
