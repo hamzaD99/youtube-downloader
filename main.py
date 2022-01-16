@@ -3,7 +3,7 @@ import functions
 file = open("Videos.csv","r")
 csv_reader = csv.reader(file,delimiter=',')
 counter = 0
-report_file = open("Report.txt","a")
+report_file = open("Report.txt","w")
 for row in csv_reader:
     if(counter == 0):
         counter = 1
