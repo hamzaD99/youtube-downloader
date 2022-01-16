@@ -3,7 +3,7 @@ import functions
 file = open("Videos.csv","r")
 csv_reader = csv.reader(file,delimiter=',')
 counter = 0
-
+report_file = open("Report.txt","a")
 for row in csv_reader:
     if(counter == 0):
         counter = 1
@@ -14,8 +14,9 @@ for row in csv_reader:
         path = row[3]
         functions.create_folder(path)
         if(playlist == "1"):
-            functions.handel_playlist(url,format,path)
+            functions.handel_playlist(url,format,path,report_file)
         else:
             video = functions.handel_url(url)
-            functions.handel_video(video,format,path)
+            functions.handel_video(video,format,path,report_file)
 file.close()
+report_file.close()
